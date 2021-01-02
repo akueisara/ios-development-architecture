@@ -1,5 +1,5 @@
 //
-//  Presenter.swift
+//  ViewModel.swift
 //  MasterDetail
 //
 //  Created by Kuei-Jung Hu on 2021/01/03.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Presenter {
+class ViewModel {
 	private var myModel = Model<Date>()
 	
 	func addEntry() {

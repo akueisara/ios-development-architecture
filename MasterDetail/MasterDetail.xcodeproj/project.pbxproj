@@ -18,8 +18,9 @@
 		9C3155C925A0CB40005912B9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155C725A0CB40005912B9 /* MasterViewController.swift */; };
 		9C3155CA25A0CB40005912B9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155C825A0CB40005912B9 /* DetailViewController.swift */; };
 		9C3155CF25A0D74F005912B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155CE25A0D74F005912B9 /* Model.swift */; };
-		9C3155D425A0D872005912B9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155D325A0D872005912B9 /* Presenter.swift */; };
+		9C3155D425A0D872005912B9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155D325A0D872005912B9 /* ViewModel.swift */; };
 		9C3155D925A0DA45005912B9 /* MasterViewController-UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155D825A0DA45005912B9 /* MasterViewController-UITableViewDataSource.swift */; };
+		9C3155E625A0DB97005912B9 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155E525A0DB97005912B9 /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,9 @@
 		9C3155C725A0CB40005912B9 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		9C3155C825A0CB40005912B9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9C3155CE25A0D74F005912B9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		9C3155D325A0D872005912B9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		9C3155D325A0D872005912B9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9C3155D825A0DA45005912B9 /* MasterViewController-UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MasterViewController-UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		9C3155E525A0DB97005912B9 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,8 @@
 		9C31559325A0CB29005912B9 /* MasterDetail */ = {
 			isa = PBXGroup;
 			children = (
+				9C3155E325A0DB77005912B9 /* ViewModel */,
+				9C3155E425A0DB7F005912B9 /* Model */,
 				9C3155C825A0CB40005912B9 /* DetailViewController.swift */,
 				9C3155C725A0CB40005912B9 /* MasterViewController.swift */,
 				9C3155D825A0DA45005912B9 /* MasterViewController-UITableViewDataSource.swift */,
@@ -119,8 +123,7 @@
 				9C31559D25A0CB2A005912B9 /* Assets.xcassets */,
 				9C31559F25A0CB2A005912B9 /* LaunchScreen.storyboard */,
 				9C3155A225A0CB2A005912B9 /* Info.plist */,
-				9C3155CE25A0D74F005912B9 /* Model.swift */,
-				9C3155D325A0D872005912B9 /* Presenter.swift */,
+				9C3155E525A0DB97005912B9 /* Binding.swift */,
 			);
 			path = MasterDetail;
 			sourceTree = "<group>";
@@ -141,6 +144,22 @@
 				9C3155B825A0CB2B005912B9 /* Info.plist */,
 			);
 			path = MasterDetailUITests;
+			sourceTree = "<group>";
+		};
+		9C3155E325A0DB77005912B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C3155D325A0D872005912B9 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C3155E425A0DB7F005912B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C3155CE25A0D74F005912B9 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3155C925A0CB40005912B9 /* MasterViewController.swift in Sources */,
-				9C3155D425A0D872005912B9 /* Presenter.swift in Sources */,
+				9C3155D425A0D872005912B9 /* ViewModel.swift in Sources */,
 				9C31559925A0CB29005912B9 /* ViewController.swift in Sources */,
 				9C3155CA25A0CB40005912B9 /* DetailViewController.swift in Sources */,
+				9C3155E625A0DB97005912B9 /* Binding.swift in Sources */,
 				9C3155CF25A0D74F005912B9 /* Model.swift in Sources */,
 				9C31559525A0CB29005912B9 /* AppDelegate.swift in Sources */,
 				9C31559725A0CB29005912B9 /* SceneDelegate.swift in Sources */,

@@ -12,7 +12,7 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     
-	let presenter = Presenter()
+	let presenter = ViewModel()
 
 
     override func viewDidLoad() {
