@@ -1,4 +1,10 @@
-//: The Liskov Substitution Principle
+/*:
+
+## The Liskov Substitution Principle
+
+Ability to replace references to base classes with objects of derived classes
+
+*/
 
 import Foundation
 
