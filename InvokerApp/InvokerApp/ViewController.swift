@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func onTapped(_ sender: Any) {
-		guard let listenerAppURL = URL(string: "listenerapp://"), UIApplication.shared.canOpenURL(listenerAppURL)
+		guard let listenerAppURL = URL(string: "listenerapp://?message=Hi+there!"), UIApplication.shared.canOpenURL(listenerAppURL)
 			  else {
 			print("Could not form URL with the string listenerapp://")
 			return
