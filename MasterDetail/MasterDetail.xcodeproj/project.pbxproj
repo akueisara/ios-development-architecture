@@ -17,6 +17,7 @@
 		9C3155B725A0CB2B005912B9 /* MasterDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155B625A0CB2B005912B9 /* MasterDetailUITests.swift */; };
 		9C3155C925A0CB40005912B9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155C725A0CB40005912B9 /* MasterViewController.swift */; };
 		9C3155CA25A0CB40005912B9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155C825A0CB40005912B9 /* DetailViewController.swift */; };
+		9C3155CF25A0D74F005912B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155CE25A0D74F005912B9 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9C3155B825A0CB2B005912B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3155C725A0CB40005912B9 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		9C3155C825A0CB40005912B9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9C3155CE25A0D74F005912B9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				9C31559D25A0CB2A005912B9 /* Assets.xcassets */,
 				9C31559F25A0CB2A005912B9 /* LaunchScreen.storyboard */,
 				9C3155A225A0CB2A005912B9 /* Info.plist */,
+				9C3155CE25A0D74F005912B9 /* Model.swift */,
 			);
 			path = MasterDetail;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				9C3155C925A0CB40005912B9 /* MasterViewController.swift in Sources */,
 				9C31559925A0CB29005912B9 /* ViewController.swift in Sources */,
 				9C3155CA25A0CB40005912B9 /* DetailViewController.swift in Sources */,
+				9C3155CF25A0D74F005912B9 /* Model.swift in Sources */,
 				9C31559525A0CB29005912B9 /* AppDelegate.swift in Sources */,
 				9C31559725A0CB29005912B9 /* SceneDelegate.swift in Sources */,
 			);
