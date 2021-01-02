@@ -51,6 +51,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		if let url = URLContexts.first?.url {
 			print(url.baseURL ?? "No base URL")
 			print(url.query ?? "No query string provided")
+			
+			var parameters = [String: String]()
+			
+			if let queryString = url.query {
+				let queryItems = queryString.components(separatedBy: "&")
+				
+				for pair in queryItems {
+					let items = pair.components(separatedBy: "=")
+					if items.count == 2 {
+						parameters[items[0]] = items[1]
+					}
+				}
+				
+				if let msg = parameters["message"] {
+					NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MessageReceived"), object: msg)
+				}
+			}
 		}
 	}
 }
