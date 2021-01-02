@@ -101,6 +101,7 @@
 		9C3155F525A0DF8F005912B9 /* AppStateTransition */ = {
 			isa = PBXGroup;
 			children = (
+				9C31562925A0DFFA005912B9 /* AppState.swift */,
 				9C3155F625A0DF8F005912B9 /* AppDelegate.swift */,
 				9C3155F825A0DF8F005912B9 /* SceneDelegate.swift */,
 				9C3155FA25A0DF8F005912B9 /* ViewController.swift */,
@@ -108,7 +109,6 @@
 				9C3155FF25A0DF91005912B9 /* Assets.xcassets */,
 				9C31560125A0DF91005912B9 /* LaunchScreen.storyboard */,
 				9C31560425A0DF91005912B9 /* Info.plist */,
-				9C31562925A0DFFA005912B9 /* AppState.swift */,
 			);
 			path = AppStateTransition;
 			sourceTree = "<group>";
