@@ -1,4 +1,10 @@
-//: The Single Responsibility Principle
+/*:
+
+## The Single Responsibility Principle
+
+Each type should have one well-defined responsibility
+
+*/
 import Foundation
 
 class CurrencyManager {
