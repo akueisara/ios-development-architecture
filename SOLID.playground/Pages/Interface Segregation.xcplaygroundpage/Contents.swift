@@ -1,5 +1,12 @@
-//: The Interface Segregation Principle
+/*:
 
+## The Interface Segregation Principle
+
+- Deals with the problem of "fat" interfaces
+
+- Clients shouldn't depend upon interfaces they don't use
+
+*/
 import UIKit
 
 protocol ImageProtocol {
