@@ -1,4 +1,14 @@
-//: The Open/Closed Principle
+/*:
+
+## The Open/Closed Principle
+
+- Entities should be open for extension but closed for modification
+
+- Adds new behavior without modifying existing code
+
+- Relies on OO concepts like inheritance, composition, and polymorphism
+
+*/
 import UIKit
 
 class Shape {
