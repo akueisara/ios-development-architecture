@@ -23,6 +23,14 @@ class ViewController: UIViewController {
 			coder.encode(textView.text, forKey: "EditedText")
 		}
 	}
+	
+	override func decodeRestorableState(with coder: NSCoder) {
+		super.decodeRestorableState(with: coder)
 
+		if let editedText = coder.decodeObject(forKey: "EditedText") as? String {
+			textView.text = editedText
+		}
+		
+	}
 }
 
