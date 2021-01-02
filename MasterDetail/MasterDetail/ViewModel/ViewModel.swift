@@ -8,10 +8,19 @@
 import Foundation
 
 class ViewModel {
-	private var myModel = Model<Date>()
+	private var myModel = Model<Observable<Date>>()
 	
 	func addEntry() {
-		myModel.insert(Date())
+		let dateObservable = Observable(Date())
+		myModel.insert(dateObservable)
+		
+		dateObservable.bind = { _ in
+			NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "updateUI")))
+		}
+		
+		DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(5)) {
+			dateObservable.value = Date()
+		}
 	}
 	
 	var count: Int {
@@ -26,6 +35,6 @@ class ViewModel {
 		guard let date = myModel[index] else {
 			return nil
 		}
-		return date.description
+		return date.value.description
 	}
 }
