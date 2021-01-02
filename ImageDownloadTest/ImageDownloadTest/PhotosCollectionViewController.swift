@@ -42,6 +42,14 @@ class PhotosCollectionViewController: UICollectionViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		/// this will block the main queue
+//		DispatchQueue.main.sync {
+//			print("Sync call on the main queue")
+//		}
+		DispatchQueue.main.async {
+			print("Async call on the main queue")
+		}
+		
 		// Do any additional setup after loading the view.
 		let width = view.frame.width/2
 		let height = view.frame.height/3
