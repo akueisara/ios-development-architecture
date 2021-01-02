@@ -92,4 +92,12 @@ class PhotosCollectionViewController: UICollectionViewController {
 		
 		return cell
 	}
+	
+	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		if let selectedCell = collectionView.cellForItem(at: indexPath) as? PhotosCollectionViewCell,
+		   let image = selectedCell.imageView.image {
+			let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+			self.present(activityController, animated: true, completion: nil)
+		}
+	}
 }
