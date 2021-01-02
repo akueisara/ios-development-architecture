@@ -1,4 +1,14 @@
-//: The Dependency Inversion Principle
+/*:
+
+## The Dependency Inversion Principle
+
+- Deals with reusability
+
+- Avoids high-level -> low-level module dependency-modules should depend on abstractions
+
+- Abstractions should not depend on details, but the other way around
+
+*/
 import Foundation
 
 class Persistence {
