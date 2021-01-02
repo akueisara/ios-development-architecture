@@ -8,6 +8,12 @@
 
 import UIKit
 
+/// Dispatch Queue
+/// - Concurrent queue: Doesn't wait for a task to finish before starting the next one
+/// - Serial queue: Executes tasks once at a time
+///    - async: Returns control to the caller immediately; the current task is the only one running on the queue
+///    - sync: The caller waits until the task completes; the current task is the only one running on the queue
+
 class PhotosCollectionViewCell: UICollectionViewCell {
 	static fileprivate let reuseIdentifier = "PhotosCollectionViewCell"
 	
@@ -62,10 +68,15 @@ class PhotosCollectionViewController: UICollectionViewController {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosCollectionViewCell.reuseIdentifier, for: indexPath) as! PhotosCollectionViewCell
 	
 		// Configure the cell
-		if let imageData = try? Data.init(contentsOf: photoLinks[indexPath.row]),
-			let image = UIImage(data: imageData) {
-			cell.imageView.image = image
+		DispatchQueue.global().async {
+			if let imageData = try? Data.init(contentsOf: self.photoLinks[indexPath.row]),
+				let image = UIImage(data: imageData) {
+				DispatchQueue.main.async {
+					cell.imageView.image = image
+				}
+			}
 		}
+		
 		
 		return cell
 	}
