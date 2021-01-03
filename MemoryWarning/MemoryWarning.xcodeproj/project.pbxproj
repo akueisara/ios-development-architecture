@@ -16,6 +16,7 @@
 		9C99238925A18592004A8FB3 /* MemoryWarningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99238825A18592004A8FB3 /* MemoryWarningTests.swift */; };
 		9C99239425A18592004A8FB3 /* MemoryWarningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99239325A18592004A8FB3 /* MemoryWarningUITests.swift */; };
 		9C9923A525A18D9E004A8FB3 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9923A425A18D9E004A8FB3 /* Foo.swift */; };
+		9C9923AA25A18F3D004A8FB3 /* MemoryPressureMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9923A925A18F3D004A8FB3 /* MemoryPressureMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9C99239325A18592004A8FB3 /* MemoryWarningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryWarningUITests.swift; sourceTree = "<group>"; };
 		9C99239525A18592004A8FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9923A425A18D9E004A8FB3 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		9C9923A925A18F3D004A8FB3 /* MemoryPressureMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPressureMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9C99237C25A18591004A8FB3 /* LaunchScreen.storyboard */,
 				9C99237F25A18591004A8FB3 /* Info.plist */,
 				9C9923A425A18D9E004A8FB3 /* Foo.swift */,
+				9C9923A925A18F3D004A8FB3 /* MemoryPressureMonitor.swift */,
 			);
 			path = MemoryWarning;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				9C9923A525A18D9E004A8FB3 /* Foo.swift in Sources */,
 				9C99237625A1858E004A8FB3 /* ViewController.swift in Sources */,
+				9C9923AA25A18F3D004A8FB3 /* MemoryPressureMonitor.swift in Sources */,
 				9C99237225A1858E004A8FB3 /* AppDelegate.swift in Sources */,
 				9C99237425A1858E004A8FB3 /* SceneDelegate.swift in Sources */,
 			);
