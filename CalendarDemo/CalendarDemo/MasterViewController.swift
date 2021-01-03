@@ -11,6 +11,12 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     private var dates = [Date]()
+	
+	private lazy var dateFormatter: DateFormatter = {
+		let formatter = DateFormatter()
+		formatter.dateStyle = .medium
+		return formatter
+	}()
     
     private func generateDays(from date: Date, count: Int) ->[Date] {
         var result = [Date]()
@@ -28,8 +34,13 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        dates = generateDays(from: Date(), count: 1000)
+		DispatchQueue.global().async {
+			self.dates = self.generateDays(from: Date(), count: 1000)
+			
+			DispatchQueue.main.async {
+				self.tableView.reloadData()
+			}
+		}
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,9 +62,6 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let date = dates[indexPath.row]
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
         
         cell.textLabel!.text = dateFormatter.string(from: date)
         
